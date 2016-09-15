@@ -15,9 +15,10 @@
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
+             Note: Page check for empty items, so string "item 1, item2, ,item3" will contain 3 items, not 4! 
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control" ng-model="items"><!--Have  NOT considered an empty item, i.e., , , as an item towards to the count.  -->
+             class="form-control" ng-model="items">
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkItem()">Check If Too Much</button>
